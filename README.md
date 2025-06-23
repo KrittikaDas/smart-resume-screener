@@ -68,3 +68,38 @@ npm run dev
 
 # 5. Open in browser
 http://localhost:3000
+
+---
+
+## 🧠 How LLM Is Used
+
+- Takes **resume text** (parsed from uploaded PDF) and **job description** as inputs.
+- Sends both to **OpenAI's GPT-4 API** via a custom prompt.
+- Receives and renders:
+  - 🎯 A **match score** (0–100)
+  - 📌 Key **feedback points** on missing skills or gaps
+  - ✍️ Improved **resume bullet point suggestions**
+  - 💌 A **customized cover letter**
+- Ensures prompt consistency and response structure for clean UI display.
+
+---
+
+## 📦 Future Enhancements
+
+- [ ] Store and view **result history**
+- [ ] Add **user authentication**
+- [ ] Include **multi-role prompt templates**
+- [ ] Support **resume export as PDF**
+- [ ] Add **voice-based JD input** for accessibility
+
+---
+
+## 👨‍💻 Author
+
+**Krittika Das**
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
