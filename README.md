@@ -1,30 +1,70 @@
-# Smart Resume Screener
+# 🧠 Smart Resume Screener  
+> **AI-powered tool to evaluate resumes, generate feedback, and suggest improvements using LLMs (GPT-4)**
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+---
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kritixdas10-gmailcoms-projects/v0-smart-resume-screener)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/mTSgVFIv2ms)
+## 🚀 Overview
 
-## Overview
+**Smart Resume Screener** is a full-stack GenAI-powered application that helps job applicants and recruiters evaluate how well a resume matches a given job description. It uses the **OpenAI GPT-4 API** to generate:
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- ✅ A match score (0–100)
+- ✅ Bullet point rewrites
+- ✅ Feedback on resume gaps
+- ✅ A customized cover letter
 
-## Deployment
+The platform is built with **Next.js**, **TailwindCSS**, **Node.js**, and **Express**, and deployed seamlessly on **Vercel**.
 
-Your project is live at:
+---
 
-**[https://vercel.com/kritixdas10-gmailcoms-projects/v0-smart-resume-screener](https://vercel.com/kritixdas10-gmailcoms-projects/v0-smart-resume-screener)**
+## 🔧 Features
 
-## Build your app
+- 📄 **Upload Resume** (PDF format)
+- 🧾 **Paste Job Description** input field
+- 🧠 **GPT-4 Evaluation**: Match score + feedback
+- ✍️ **Bullet Point Rewriter**
+- 💌 **Auto Cover Letter Generator**
+- 📊 **Dynamic UI with real-time feedback**
+- ☁️ **Deployed on Vercel**
 
-Continue building your app on:
+---
 
-**[https://v0.dev/chat/projects/mTSgVFIv2ms](https://v0.dev/chat/projects/mTSgVFIv2ms)**
+## 🧰 Tech Stack
 
-## How It Works
+| Frontend     | Backend       | AI/LLM           | Deployment |
+|--------------|----------------|------------------|-------------|
+| Next.js      | Node.js        | OpenAI GPT-4 API | Vercel      |
+| Tailwind CSS | Express.js     | Custom Prompts   |             |
+| pdf-parse    |                |                  |             |
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+
+## 📸 Screenshots
+
+<!-- Add image links or remove this section if not ready -->
+
+| Upload Resume & JD | AI Feedback Panel |
+|--------------------|-------------------|
+| ![upload](link1)   | ![feedback](link2) |
+
+---
+
+## 🛠️ Setup Instructions
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/KrittikaDas/smart-resume-screener.git
+cd smart-resume-screener
+
+# 2. Install dependencies
+npm install
+
+# 3. Set up environment variables
+touch .env.local
+# Add your OpenAI API key in the .env.local file:
+OPENAI_API_KEY=your_openai_key_here
+
+# 4. Run the development server
+npm run dev
+
+# 5. Open in browser
+http://localhost:3000
