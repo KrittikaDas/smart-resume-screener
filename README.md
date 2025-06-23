@@ -38,16 +38,6 @@ The platform is built with **Next.js**, **TailwindCSS**, **Node.js**, and **Expr
 
 ---
 
-## 📸 Screenshots
-
-<!-- Add image links or remove this section if not ready -->
-
-| Upload Resume & JD | AI Feedback Panel |
-|--------------------|-------------------|
-| ![upload](link1)   | ![feedback](link2) |
-
----
-
 ## 🛠️ Setup Instructions
 
 ```bash
@@ -69,12 +59,13 @@ npm run dev
 # 5. Open in browser
 http://localhost:3000
 
+
 ---
 
 ## 🧠 How LLM Is Used
 
 - Takes **resume text** (parsed from uploaded PDF) and **job description** as inputs.
-- Sends both to **OpenAI's GPT-4 API** via a custom prompt.
+- Sends both to **OpenAI GPT-4 API** via a custom prompt.
 - Receives and renders:
   - 🎯 A **match score** (0–100)
   - 📌 Key **feedback points** on missing skills or gaps
